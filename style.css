@@ -82,3 +82,24 @@ footer {
   background-color: #f8d8e4;
   color: #80004c;
 }
+h4 {
+  font-weight: 600;
+}
+
+ul.collection li {
+  font-size: 1.1rem;
+}
+
+textarea.materialize-textarea {
+  min-height: 150px;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+footer .white-text {
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+

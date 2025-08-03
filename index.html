@@ -4,73 +4,84 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Taufa Treasure</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>Taufa Treasure</h1>
-    <p>Where Every Gift Tells a Story</p>
-  </header>
 
-  <section id="about">
-    <h2>🌸 About Us – Taufa Treasure</h2>
-    <p>Welcome to Taufa Treasure, where every gift tells a story and every detail speaks from the heart.</p>
-    <p>Founded in 2023, Taufa Treasure began as a small dream from the cozy corner of a home — built with love and funded by humble Eidi savings. What started as a passion for creativity has now blossomed into a growing brand known for handcrafted, personalized treasures that turn every moment into a memory.</p>
-    <p>At Taufa Treasure, we believe gifting is not just an exchange — it’s an emotion, a gesture, a taufa from the heart.</p>
+  <nav class="pink lighten-2">
+    <div class="nav-wrapper container center-align">
+      <a href="#" class="brand-logo center">Taufa Treasure</a>
+    </div>
+  </nav>
+
+  <section class="section container center-align">
+    <h4>🌸 About Us</h4>
+    <p>Founded in 2023, Taufa Treasure began as a small dream from a cozy home — built with love and funded by Eidi savings. We handcraft and personalize gifts that speak from the heart.</p>
   </section>
 
-  <section id="offerings">
-    <h2>🎁 What We Offer</h2>
-    <ul>
-      <li><strong>Jewellery:</strong> Handmade beaded jewellery, elegant and unique</li>
-      <li><strong>Bouquets:</strong> Flower, chocolate, money, makeup, and accessories bouquets</li>
-      <li><strong>Nikah Essentials:</strong> Beautifully designed Nikah Namas and wedding favours</li>
-      <li><strong>Trousseau Packing:</strong> Gorgeous presentation for your most cherished occasions</li>
-      <li><strong>Festive Gifting:</strong> Curated hampers and decorated gifts for Eid, Diwali, Rakhi & more</li>
-      <li><strong>Return Gifts:</strong> Customised favours for birthdays, weddings, and baby showers</li>
-      <li><strong>Custom Hampers:</strong> Thoughtfully packed gifts for every celebration and relationship</li>
-    </ul>
-  </section>
-
-  <section id="why-us">
-    <h2>🪄 Why Choose Us?</h2>
-    <ul>
-      <li>Made with Heart & Hands – Every piece is crafted with love and attention to detail</li>
-      <li>Uniquely Yours – Personalized gifts that truly reflect you or your loved ones</li>
-      <li>Budget Friendly Luxury – Beautiful, meaningful gifting without breaking the bank</li>
-      <li>Women-Led Small Business – Supporting dreams, one taufa at a time</li>
-    </ul>
-  </section>
-
-  <section id="journey">
-    <h2>💫 Our Journey</h2>
-    <p>From a corner table to hundreds of happy customers, our journey is stitched with stories, support, and smiles. Each product we create carries a bit of our story — and becomes part of yours.</p>
-    <p>We are not just a gifting brand. We are a celebration of love, creativity, and thoughtful expression.</p>
-  </section>
-
-  <section id="portfolio">
-    <h2>📸 Showcase</h2>
-    <div class="grid">
-      <div class="card">✨ Made with Love</div>
-      <div class="card">🧵 From Our Hands to Yours</div>
-      <div class="card">💌 Customer Diaries</div>
-      <div class="card">📦 Shop by Occasion</div>
-      <div class="card">🎨 Create Your Own Taufa</div>
+  <section class="section pink lighten-5 center-align">
+    <div class="container">
+      <h4>🎁 What We Offer</h4>
+      <ul class="collection center-align" style="display: inline-block; text-align: left;">
+        <li class="collection-item">Jewellery: Handmade, elegant, unique</li>
+        <li class="collection-item">Bouquets: Chocolate, makeup, money, accessories</li>
+        <li class="collection-item">Nikah Essentials: Nikah Namas, wedding favours</li>
+        <li class="collection-item">Trousseau Packing</li>
+        <li class="collection-item">Festive Gifting & Return Gifts</li>
+        <li class="collection-item">Custom Hampers for all occasions</li>
+      </ul>
     </div>
   </section>
 
-  <section id="form">
-    <h2>🎨 Create Your Own Taufa</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Describe your custom taufa..." required></textarea>
-      <button type="submit">Submit</button>
-    </form>
+  <section class="section container center-align">
+    <h4>🪄 Why Choose Us?</h4>
+    <ul class="browser-default center-align" style="display: inline-block; text-align: left;">
+      <li>❤️ Handcrafted with Love</li>
+      <li>✨ Personalized for You</li>
+      <li>💸 Affordable Gifting</li>
+      <li>👩‍🎨 Women-led Small Business</li>
+    </ul>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Taufa Treasure. All rights reserved.</p>
+  <section class="section pink lighten-5 center-align">
+    <div class="container">
+      <h4>🎨 Create Your Own Taufa</h4>
+      <form action="https://formsubmit.co/sameerarazvi92@gmail.com" method="POST" style="max-width: 500px; margin: auto;">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="input-field">
+          <input type="text" id="name" name="name" required />
+          <label for="name">Your Name</label>
+        </div>
+
+        <div class="input-field">
+          <input type="email" id="email" name="email" required />
+          <label for="email">Your Email</label>
+        </div>
+
+        <div class="input-field">
+          <textarea id="message" name="message" class="materialize-textarea" required></textarea>
+          <label for="message">Describe your custom taufa...</label>
+        </div>
+
+        <button type="submit" class="btn pink">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="page-footer pink lighten-2">
+    <div class="container">
+      <div class="center-align white-text">
+        &copy; 2025 Taufa Treasure — Crafted with 💖
+      </div>
+    </div>
   </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
